@@ -45,7 +45,7 @@ jobs:
         run: |
           # NOTE: put your own distribution build steps here.
           uv build
-          uv publish
+          # uv publish
 
   pypi-publish:
     runs-on: ubuntu-latest
