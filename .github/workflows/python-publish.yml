@@ -11,6 +11,17 @@ name: Upload Python Package
 on:
   release:
     types: [published]
+    
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deploy environment (e.g., staging, production)'
+        required: true
+        default: 'staging'
+      version:
+        description: 'Version to deploy'
+        required: false
+        default: 'latest'
 
 permissions:
   contents: read
