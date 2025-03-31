@@ -1,0 +1,7 @@
+from .json_tools import load_json, save_normal_json
+from .print_tools import dict_printer
+from .string_tools import normalize_newlines, remove_unwanted_tags
+
+
+def main() -> None:
+    print("Hello from toolbox-iop!")
