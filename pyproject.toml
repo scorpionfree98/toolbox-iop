@@ -1,6 +1,6 @@
 [project]
 name = "toolbox-iop"
-version = "0.1.1"
+version = "0.1.2"
 description = "The toolbox for json load save and print, you may find more function in the future."
 readme = "README.md"
 authors = [
