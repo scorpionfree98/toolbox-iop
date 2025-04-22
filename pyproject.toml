@@ -13,8 +13,8 @@ dependencies = [
 ]
 
 [project.scripts]
-toolbox-iop = "toolbox_iop:main"
-toolbox-iop-print = "cli.print_cli:main"
+toolbox-iop-print = "toolbox_iop.cli:print_main"
+toolbox-iop-check-jid = "toolbox_iop.cli:check_jid"
 
 [build-system]
 requires = ["hatchling"]
