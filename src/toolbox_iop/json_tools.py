@@ -24,6 +24,7 @@ def load_json(json_path, process_func=lambda x: x):
                 loaded = safety_json_loader(stripped, index)
                 if loaded is not None:  # 检查是否非None
                     result.append(loaded)
+    return result
 
 
 def save_normal_json(json_info, json_path):
