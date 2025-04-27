@@ -23,6 +23,7 @@ def load_json(json_path, process_func=lambda x: x):
             if stripped:  # 检查是否非空
                 loaded = safety_json_loader(stripped, index)
                 if loaded is not None:  # 检查是否非None
+                    loaded = process_func(loaded)
                     result.append(loaded)
     return result
 
