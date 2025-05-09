@@ -50,4 +50,3 @@ def parse_str(words, key="", print_switch=True, prefix="\n\n\n\n\n"):
         import traceback
 
         print("\n输入的字符串不是有效的JSON格式:\n", traceback.format_exc())
-        print("\n输入的字符串不是有效的JSON格式:\n", traceback.format_exc())
