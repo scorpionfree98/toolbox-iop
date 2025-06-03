@@ -1,5 +1,7 @@
 import json
 
+import json_repair
+
 
 def safety_json_loader(json_str, index=None):
     try:
@@ -35,9 +37,24 @@ def save_normal_json(json_info, json_path):
 
 
 def flatten_dict(my_dict):
-    result_list = []
     for k, v in my_dict.items():
         if isinstance(v, dict):
             yield from flatten_dict(v)
         else:
             yield k, v
+
+
+def load_json_line(info):
+    try:
+        data = json.loads(info)
+    except json.JSONDecodeError:
+        # 可以在这里添加安装逻辑
+
+        data = json_repair.loads(info)
+    return data
+
+
+def load_json_file(file_path):
+    with open(file_path, "r") as file:
+        data = load_json_line(file.read())
+    return data

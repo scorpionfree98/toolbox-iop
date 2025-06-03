@@ -1,2 +1,2 @@
-from ..json_check_tools import main as check_jid
+from .check_cli import main as check_main
 from .print_cli import main as print_main
