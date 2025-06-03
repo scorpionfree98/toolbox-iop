@@ -1,12 +1,11 @@
 version = 1
 revision = 1
-requires-python = ">=3.6"
+requires-python = ">=3.7"
 resolution-markers = [
-    "python_full_version >= '3.8'",
-    "python_full_version == '3.7.*'",
-    "python_full_version >= '3.6.3' and python_full_version < '3.7'",
-    "python_full_version >= '3.6.2' and python_full_version < '3.6.3'",
-    "python_full_version < '3.6.2'",
+    "python_full_version >= '3.10'",
+    "python_full_version == '3.9.*'",
+    "python_full_version == '3.8.*'",
+    "python_full_version < '3.8'",
 ]
 
 [[package]]
@@ -19,33 +18,51 @@ wheels = [
 ]
 
 [[package]]
-name = "commonmark"
-version = "0.9.1"
+name = "json-repair"
+version = "0.25.3"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/60/48/a60f593447e8f0894ebb7f6e6c1f25dafc5e89c5879fdc9360ae93ff83f0/commonmark-0.9.1.tar.gz", hash = "sha256:452f9dc859be7f06631ddcb328b6919c67984aca654e5fefb3914d54691aed60", size = 95764 }
+resolution-markers = [
+    "python_full_version < '3.8'",
+]
+sdist = { url = "https://files.pythonhosted.org/packages/7c/60/484ee009c1867ddc5ffe0ff2131b82e80bbf13fdb59f3d93834f98e56a9f/json_repair-0.25.3.tar.gz", hash = "sha256:4ee970581a05b0b258b749eb8bcac21de380edda97c3717a4edfafc519ec21a4", size = 20619 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b1/92/dfd892312d822f36c55366118b95d914e5f16de11044a27cf10a7d71bbbf/commonmark-0.9.1-py2.py3-none-any.whl", hash = "sha256:da2f38c92590f83de410ba1a3cbceafbc74fee9def35f9251ba9a971d6d66fd9", size = 51068 },
+    { url = "https://files.pythonhosted.org/packages/f0/9e/2ab68cc0ff030e1ef78329d7b933473d3ad2c7d0e66aede6a7c87f74753c/json_repair-0.25.3-py3-none-any.whl", hash = "sha256:f00b510dd21b31ebe72581bdb07e66381df2883d6f640c89605e482882c12b17", size = 12812 },
 ]
 
 [[package]]
-name = "dataclasses"
-version = "0.8"
+name = "json-repair"
+version = "0.30.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/1f/12/7919c5d8b9c497f9180db15ea8ead6499812ea8264a6ae18766d93c59fe5/dataclasses-0.8.tar.gz", hash = "sha256:8479067f342acf957dc82ec415d355ab5edb7e7646b90dc6e2fd1d96ad084c97", size = 36581 }
+resolution-markers = [
+    "python_full_version == '3.8.*'",
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3d/31/42365a1fc9a1c4eab42f50013b7e75390bcb1a1be59d68c9b472822dabc9/json_repair-0.30.0.tar.gz", hash = "sha256:24f12087a0e385ed47207eab1fca12bffd473e48db5bb803793d6c4fd97377ce", size = 26019 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/fe/ca/75fac5856ab5cfa51bbbcefa250182e50441074fdc3f803f6e76451fab43/dataclasses-0.8-py3-none-any.whl", hash = "sha256:0201d89fa866f68c8ebd9d08ee6ff50c0b255f8ec63a71c16fda7af82bb887bf", size = 19041 },
+    { url = "https://files.pythonhosted.org/packages/23/38/34cb843cee4c5c27aa5c822e90e99bf96feb3dfa705713b5b6e601d17f5c/json_repair-0.30.0-py3-none-any.whl", hash = "sha256:bda4a5552dc12085c6363ff5acfcdb0c9cafc629989a2112081b7e205828228d", size = 17641 },
 ]
 
 [[package]]
-name = "importlib-resources"
-version = "5.4.0"
+name = "json-repair"
+version = "0.44.1"
 source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "zipp", marker = "python_full_version < '3.7'" },
+resolution-markers = [
+    "python_full_version == '3.9.*'",
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b5/d8/51ace1c1ea6609c01c7f46ca2978e11821aa0efaaa7516002ef6df000731/importlib_resources-5.4.0.tar.gz", hash = "sha256:d756e2f85dd4de2ba89be0b21dba2a3bbec2e871a42a3a16719258a11f87506b", size = 30554 }
+sdist = { url = "https://files.pythonhosted.org/packages/a8/6b/ed6e92efc5acfbc9c35ccae1676b70e4adb1552421e64f838c2a3f097d9a/json_repair-0.44.1.tar.gz", hash = "sha256:1130eb9733b868dac1340b43cb2effebb519ae6d52dd2d0728c6cca517f1e0b4", size = 32886 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/24/1b/33e489669a94da3ef4562938cd306e8fa915e13939d7b8277cb5569cb405/importlib_resources-5.4.0-py3-none-any.whl", hash = "sha256:33a95faed5fc19b4bc16b29a6eeae248a3fe69dd55d4d229d2b480e23eeaad45", size = 28066 },
+    { url = "https://files.pythonhosted.org/packages/82/b4/3cbd27a3240b2962c3b87bbb1c20eb6c56e5b26cde61f141f86ca98e2f68/json_repair-0.44.1-py3-none-any.whl", hash = "sha256:51d82532c3b8263782a301eb7904c75dce5fee8c0d1aba490287fc0ab779ac50", size = 22478 },
+]
+
+[[package]]
+name = "json-repair"
+version = "0.46.0"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version >= '3.10'",
+]
+sdist = { url = "https://files.pythonhosted.org/packages/79/5a/5c14f14735438eb27fd4eb9bb4eb273c996c0d1d959182382cbc618f99dd/json_repair-0.46.0.tar.gz", hash = "sha256:abc751162baf8e384685558acba978478e833c1207be31468d9babfaf8029ab6", size = 33321 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/33/ea/8ca71883f10acf4449720b86dd85cea51d7a71bec2558d5275ae0dcc66e4/json_repair-0.46.0-py3-none-any.whl", hash = "sha256:54d6a9889fba0846b80befb2b1aca619103ad3ed74612fb3fedd965a4a3b1653", size = 22255 },
 ]
 
 [[package]]
@@ -53,11 +70,11 @@ name = "markdown-it-py"
 version = "2.2.0"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version == '3.7.*'",
+    "python_full_version < '3.8'",
 ]
 dependencies = [
-    { name = "mdurl", marker = "python_full_version == '3.7.*'" },
-    { name = "typing-extensions", version = "4.7.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.7.*'" },
+    { name = "mdurl", marker = "python_full_version < '3.8'" },
+    { name = "typing-extensions", version = "4.7.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.8'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/e4/c0/59bd6d0571986f72899288a95d9d6178d0eebd70b6650f1bb3f0da90f8f7/markdown-it-py-2.2.0.tar.gz", hash = "sha256:7c9a5e412688bc771c67432cbfebcdd686c93ce6484913dccf06cb5a0bea35a1", size = 67120 }
 wheels = [
@@ -69,7 +86,9 @@ name = "markdown-it-py"
 version = "3.0.0"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version >= '3.8'",
+    "python_full_version >= '3.10'",
+    "python_full_version == '3.9.*'",
+    "python_full_version == '3.8.*'",
 ]
 dependencies = [
     { name = "mdurl", marker = "python_full_version >= '3.8'" },
@@ -90,24 +109,10 @@ wheels = [
 
 [[package]]
 name = "pygments"
-version = "2.14.0"
-source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version >= '3.6.3' and python_full_version < '3.7'",
-    "python_full_version >= '3.6.2' and python_full_version < '3.6.3'",
-    "python_full_version < '3.6.2'",
-]
-sdist = { url = "https://files.pythonhosted.org/packages/da/6a/c427c06913204e24de28de5300d3f0e809933f376e0b7df95194b2bb3f71/Pygments-2.14.0.tar.gz", hash = "sha256:b3ed06a9e8ac9a9aae5a6f5dbe78a8a58655d17b43b93c078f094ddc476ae297", size = 4434562 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/0b/42/d9d95cc461f098f204cd20c85642ae40fbff81f74c300341b8d0e0df14e0/Pygments-2.14.0-py3-none-any.whl", hash = "sha256:fa7bd7bd2771287c0de303af8bfdfc731f51bd2c6a47ab69d117138893b82717", size = 1123889 },
-]
-
-[[package]]
-name = "pygments"
 version = "2.17.2"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version == '3.7.*'",
+    "python_full_version < '3.8'",
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/55/59/8bccf4157baf25e4aa5a0bb7fa3ba8600907de105ebc22b0c78cfbf6f565/pygments-2.17.2.tar.gz", hash = "sha256:da46cec9fd2de5be3a8a784f434e4c4ab670b4ff54d605c4c2717e9d49c4c367", size = 4827772 }
 wheels = [
@@ -119,7 +124,9 @@ name = "pygments"
 version = "2.19.1"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version >= '3.8'",
+    "python_full_version >= '3.10'",
+    "python_full_version == '3.9.*'",
+    "python_full_version == '3.8.*'",
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/7c/2d/c3338d48ea6cc0feb8446d8e6937e1408088a72a39937982cc6111d17f84/pygments-2.19.1.tar.gz", hash = "sha256:61c16d2a8576dc0649d9f39e089b5f02bcd27fba10d8fb4dcc28173f7a45151f", size = 4968581 }
 wheels = [
@@ -128,70 +135,15 @@ wheels = [
 
 [[package]]
 name = "rich"
-version = "10.11.0"
-source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version < '3.6.2'",
-]
-dependencies = [
-    { name = "colorama", marker = "python_full_version < '3.6.2'" },
-    { name = "commonmark", marker = "python_full_version < '3.6.2'" },
-    { name = "dataclasses", marker = "python_full_version < '3.6.2'" },
-    { name = "pygments", version = "2.14.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.6.2'" },
-    { name = "typing-extensions", version = "3.10.0.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.6.2'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/57/3f/a8ba181148dcb9184cb0afac66d075fce60f06f926ce9cdab3dc61fd6497/rich-10.11.0.tar.gz", hash = "sha256:016fa105f34b69c434e7f908bb5bd7fefa9616efdb218a2917117683a6394ce5", size = 195164 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/df/c8/29044e2f495c60835349633874b07a05acc37339adb7ae749d0d33418235/rich-10.11.0-py3-none-any.whl", hash = "sha256:44bb3f9553d00b3c8938abf89828df870322b9ba43caf3b12bb7758debdc6dec", size = 211898 },
-]
-
-[[package]]
-name = "rich"
-version = "12.0.1"
-source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version >= '3.6.2' and python_full_version < '3.6.3'",
-]
-dependencies = [
-    { name = "commonmark", marker = "python_full_version >= '3.6.2' and python_full_version < '3.6.3'" },
-    { name = "dataclasses", marker = "python_full_version >= '3.6.2' and python_full_version < '3.6.3'" },
-    { name = "pygments", version = "2.14.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.6.2' and python_full_version < '3.6.3'" },
-    { name = "typing-extensions", version = "4.1.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.6.2' and python_full_version < '3.6.3'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/8e/81/d59e9198a32206a156649a24a813a36a50461d9f6e669378c68aed974910/rich-12.0.1.tar.gz", hash = "sha256:3fba9dd15ebe048e2795a02ac19baee79dc12cc50b074ef70f2958cd651b59a9", size = 206287 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/05/cf/c2ecf2bdfed36ba99908ca4f322881ed715338b7cfec7a35344a934f956e/rich-12.0.1-py3-none-any.whl", hash = "sha256:ce5c714e984a2d185399e4e1dd1f8b2feacb7cecfc576f1522425643a36a57ea", size = 224180 },
-]
-
-[[package]]
-name = "rich"
-version = "12.6.0"
-source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version >= '3.6.3' and python_full_version < '3.7'",
-]
-dependencies = [
-    { name = "commonmark", marker = "python_full_version >= '3.6.3' and python_full_version < '3.7'" },
-    { name = "dataclasses", marker = "python_full_version >= '3.6.3' and python_full_version < '3.7'" },
-    { name = "pygments", version = "2.14.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.6.3' and python_full_version < '3.7'" },
-    { name = "typing-extensions", version = "4.1.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.6.3' and python_full_version < '3.7'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/11/23/814edf09ec6470d52022b9e95c23c1bef77f0bc451761e1504ebd09606d3/rich-12.6.0.tar.gz", hash = "sha256:ba3a3775974105c221d31141f2c116f4fd65c5ceb0698657a11e9f295ec93fd0", size = 220114 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/32/60/81ac2e7d1e3b861ab478a72e3b20fc91c4302acd2274822e493758941829/rich-12.6.0-py3-none-any.whl", hash = "sha256:a4eb26484f2c82589bd9a17c73d32a010b1e29d89f1604cd9bf3a2097b81bb5e", size = 237505 },
-]
-
-[[package]]
-name = "rich"
 version = "13.8.1"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version == '3.7.*'",
+    "python_full_version < '3.8'",
 ]
 dependencies = [
-    { name = "markdown-it-py", version = "2.2.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.7.*'" },
-    { name = "pygments", version = "2.17.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.7.*'" },
-    { name = "typing-extensions", version = "4.7.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.7.*'" },
+    { name = "markdown-it-py", version = "2.2.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.8'" },
+    { name = "pygments", version = "2.17.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.8'" },
+    { name = "typing-extensions", version = "4.7.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.8'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/92/76/40f084cb7db51c9d1fa29a7120717892aeda9a7711f6225692c957a93535/rich-13.8.1.tar.gz", hash = "sha256:8260cda28e3db6bf04d2d1ef4dbc03ba80a824c88b0e7668a0f23126a424844a", size = 222080 }
 wheels = [
@@ -203,7 +155,9 @@ name = "rich"
 version = "14.0.0"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version >= '3.8'",
+    "python_full_version >= '3.10'",
+    "python_full_version == '3.9.*'",
+    "python_full_version == '3.8.*'",
 ]
 dependencies = [
     { name = "markdown-it-py", version = "3.0.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.8'" },
@@ -217,52 +171,31 @@ wheels = [
 
 [[package]]
 name = "toolbox-iop"
-version = "0.1.0"
+version = "0.1.4"
 source = { editable = "." }
 dependencies = [
-    { name = "rich", version = "10.11.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.6.2'" },
-    { name = "rich", version = "12.0.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.6.2' and python_full_version < '3.6.3'" },
-    { name = "rich", version = "12.6.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.6.3' and python_full_version < '3.7'" },
-    { name = "rich", version = "13.8.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.7.*'" },
+    { name = "json-repair", version = "0.25.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.8'" },
+    { name = "json-repair", version = "0.30.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.8.*'" },
+    { name = "json-repair", version = "0.44.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.9.*'" },
+    { name = "json-repair", version = "0.46.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+    { name = "rich", version = "13.8.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.8'" },
     { name = "rich", version = "14.0.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.8'" },
-    { name = "tqdm", version = "4.64.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.7'" },
-    { name = "tqdm", version = "4.67.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.7'" },
+    { name = "tqdm" },
 ]
 
 [package.metadata]
 requires-dist = [
+    { name = "json-repair", specifier = ">=0.25.3" },
     { name = "rich", specifier = ">=10.11.0" },
     { name = "tqdm", specifier = ">=4.64.1" },
 ]
 
 [[package]]
 name = "tqdm"
-version = "4.64.1"
-source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version >= '3.6.3' and python_full_version < '3.7'",
-    "python_full_version >= '3.6.2' and python_full_version < '3.6.3'",
-    "python_full_version < '3.6.2'",
-]
-dependencies = [
-    { name = "colorama", marker = "python_full_version < '3.7' and sys_platform == 'win32'" },
-    { name = "importlib-resources", marker = "python_full_version < '3.7'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/c1/c2/d8a40e5363fb01806870e444fc1d066282743292ff32a9da54af51ce36a2/tqdm-4.64.1.tar.gz", hash = "sha256:5f4f682a004951c1b450bc753c710e9280c5746ce6ffedee253ddbcbf54cf1e4", size = 169599 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/47/bb/849011636c4da2e44f1253cd927cfb20ada4374d8b3a4e425416e84900cc/tqdm-4.64.1-py2.py3-none-any.whl", hash = "sha256:6fee160d6ffcd1b1c68c65f14c829c22832bc401726335ce92c52d395944a6a1", size = 78468 },
-]
-
-[[package]]
-name = "tqdm"
 version = "4.67.1"
 source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version >= '3.8'",
-    "python_full_version == '3.7.*'",
-]
 dependencies = [
-    { name = "colorama", marker = "python_full_version >= '3.7' and sys_platform == 'win32'" },
+    { name = "colorama", marker = "sys_platform == 'win32'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/a8/4b/29b4ef32e036bb34e4ab51796dd745cdba7ed47ad142a9f4a1eb8e0c744d/tqdm-4.67.1.tar.gz", hash = "sha256:f8aef9c52c08c13a65f30ea34f4e5aac3fd1a34959879d7e59e63027286627f2", size = 169737 }
 wheels = [
@@ -271,35 +204,10 @@ wheels = [
 
 [[package]]
 name = "typing-extensions"
-version = "3.10.0.2"
-source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version < '3.6.2'",
-]
-sdist = { url = "https://files.pythonhosted.org/packages/ed/12/c5079a15cf5c01d7f4252b473b00f7e68ee711be605b9f001528f0298b98/typing_extensions-3.10.0.2.tar.gz", hash = "sha256:49f75d16ff11f1cd258e1b988ccff82a3ca5570217d7ad8c5f48205dd99a677e", size = 46048 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/74/60/18783336cc7fcdd95dae91d73477830aa53f5d3181ae4fe20491d7fc3199/typing_extensions-3.10.0.2-py3-none-any.whl", hash = "sha256:f1d25edafde516b146ecd0613dabcc61409817af4766fbbcfb8d1ad4ec441a34", size = 26288 },
-]
-
-[[package]]
-name = "typing-extensions"
-version = "4.1.1"
-source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version >= '3.6.3' and python_full_version < '3.7'",
-    "python_full_version >= '3.6.2' and python_full_version < '3.6.3'",
-]
-sdist = { url = "https://files.pythonhosted.org/packages/b1/5a/8b5fbb891ef3f81fc923bf3cb4a578c0abf9471eb50ce0f51c74212182ab/typing_extensions-4.1.1.tar.gz", hash = "sha256:1a9462dcc3347a79b1f1c0271fbe79e844580bb598bafa1ed208b94da3cdcd42", size = 26694 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/45/6b/44f7f8f1e110027cf88956b59f2fad776cca7e1704396d043f89effd3a0e/typing_extensions-4.1.1-py3-none-any.whl", hash = "sha256:21c85e0fe4b9a155d0799430b0ad741cdce7e359660ccbd8b530613e8df88ce2", size = 26844 },
-]
-
-[[package]]
-name = "typing-extensions"
 version = "4.7.1"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version == '3.7.*'",
+    "python_full_version < '3.8'",
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/3c/8b/0111dd7d6c1478bf83baa1cab85c686426c7a6274119aceb2bd9d35395ad/typing_extensions-4.7.1.tar.gz", hash = "sha256:b75ddc264f0ba5615db7ba217daeb99701ad295353c45f9e95963337ceeeffb2", size = 72876 }
 wheels = [
@@ -311,18 +219,11 @@ name = "typing-extensions"
 version = "4.13.0"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version >= '3.8'",
+    "python_full_version >= '3.10'",
+    "python_full_version == '3.9.*'",
+    "python_full_version == '3.8.*'",
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/0e/3e/b00a62db91a83fff600de219b6ea9908e6918664899a2d85db222f4fbf19/typing_extensions-4.13.0.tar.gz", hash = "sha256:0a4ac55a5820789d87e297727d229866c9650f6521b64206413c4fbada24d95b", size = 106520 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e0/86/39b65d676ec5732de17b7e3c476e45bb80ec64eb50737a8dce1a4178aba1/typing_extensions-4.13.0-py3-none-any.whl", hash = "sha256:c8dd92cc0d6425a97c18fbb9d1954e5ff92c1ca881a309c45f06ebc0b79058e5", size = 45683 },
-]
-
-[[package]]
-name = "zipp"
-version = "3.6.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/02/bf/0d03dbdedb83afec081fefe86cae3a2447250ef1a81ac601a9a56e785401/zipp-3.6.0.tar.gz", hash = "sha256:71c644c5369f4a6e07636f0aa966270449561fcea2e3d6747b8d23efaa9d7832", size = 13047 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/bd/df/d4a4974a3e3957fd1c1fa3082366d7fff6e428ddb55f074bf64876f8e8ad/zipp-3.6.0-py3-none-any.whl", hash = "sha256:9fe5ea21568a0a70e50f273397638d39b03353731e6cbbb3fd8502a33fec40bc", size = 5313 },
 ]

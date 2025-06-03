@@ -1,13 +1,14 @@
 [project]
 name = "toolbox-iop"
-version = "0.1.4"
+version = "0.1.4-2"
 description = "The toolbox for json load save and print, you may find more function in the future."
 readme = "README.md"
 authors = [
     { name = "scorpion_free", email = "scorpion_free@qq.com" }
 ]
-requires-python = ">=3.6"
+requires-python = ">=3.7"
 dependencies = [
+    "json-repair>=0.25.3",
     "rich>=10.11.0",
     "tqdm>=4.64.1",
 ]
