@@ -3,9 +3,9 @@ import json
 import json_repair
 
 
-def safety_json_loader(json_str, index=None):
+def safety_json_loader(json_str, index=None, json_repair=True):
     try:
-        return json.loads(json_str)
+        return load_json_line(json_str, json_repair)
     except json.JSONDecodeError:
         # 处理错误的JSON字符串
         # 可以选择忽略错误的行或进行其他处理
@@ -35,6 +35,10 @@ def save_normal_json(json_info, json_path):
         for info in json_info:
             print(json.dumps(info, ensure_ascii=False), file=f)
 
+def save_json_file(json_info, json_path):
+    with open(json_path, "w") as f:
+        print(json.dumps(json_info, ensure_ascii=False), file=f)
+
 
 def flatten_dict(my_dict):
     for k, v in my_dict.items():
@@ -44,13 +48,18 @@ def flatten_dict(my_dict):
             yield k, v
 
 
-def load_json_line(info):
+def load_json_line(info, json_repair=True):
+    e = None
     try:
         data = json.loads(info)
-    except json.JSONDecodeError:
-        # 可以在这里添加安装逻辑
-
+    except json.JSONDecodeError as e:
+        # 可以在这里添加安装逻辑   
+        pass
+    if json_repair:
         data = json_repair.loads(info)
+    else:
+        if e is not None:
+            raise e
     return data
 
 
@@ -58,3 +67,5 @@ def load_json_file(file_path):
     with open(file_path, "r") as file:
         data = load_json_line(file.read())
     return data
+
+
