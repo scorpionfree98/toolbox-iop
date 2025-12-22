@@ -3,9 +3,9 @@ import json
 import json_repair
 
 
-def safety_json_loader(json_str, index=None, json_repair=True):
+def safety_json_loader(json_str, index=None, repair=True):
     try:
-        return load_json_line(json_str, json_repair)
+        return load_json_line(json_str, repair)
     except json.JSONDecodeError:
         # 处理错误的JSON字符串
         # 可以选择忽略错误的行或进行其他处理
@@ -48,14 +48,14 @@ def flatten_dict(my_dict):
             yield k, v
 
 
-def load_json_line(info, json_repair=True):
+def load_json_line(info, repair=True):
     e = None
     try:
         data = json.loads(info)
     except json.JSONDecodeError as e:
         # 可以在这里添加安装逻辑   
         pass
-    if json_repair:
+    if repair:
         data = json_repair.loads(info)
     else:
         if e is not None:
