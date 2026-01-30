@@ -16,11 +16,13 @@ def safety_json_loader(json_str, index=None, repair=True):
     # print("yes"
 
 
-def load_json(json_path, process_func=lambda x: x):
+def load_json(json_path, process_func=lambda x: x, load_num=None):
     # print("yes")
     with open(json_path, "r") as f:
         result = []
         for index, line in enumerate(f):
+            if load_num is not None and index >= load_num:
+                break
             stripped = line.strip()
             if stripped:  # 检查是否非空
                 loaded = safety_json_loader(stripped, index)
@@ -41,6 +43,7 @@ def save_json_file(json_info, json_path):
 
 
 def flatten_dict(my_dict):
+    # 递归函数，用于展开嵌套的字典
     for k, v in my_dict.items():
         if isinstance(v, dict):
             yield from flatten_dict(v)

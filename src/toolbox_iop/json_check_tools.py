@@ -21,3 +21,10 @@ def find_duplicate_ids(jsonl_file, key="id", json_file=False):
     }
 
     return duplicates
+
+
+def count_json_list_length(json_obj):
+    if isinstance(json_obj, list):
+        return len(json_obj)
+    return None
+

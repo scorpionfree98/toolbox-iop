@@ -73,6 +73,25 @@ toolbox-iop-duplicate path/to/file.json --key KEY
 - JSON structure validation / JSON 结构验证
 - Progress visualization / 进度可视化
 
+### 3. Count JSON/JSONL List Length / 统计JSON/JSONL列表长度
+```bash
+toolbox-iop-count path/to/file [options]
+```
+功能特点：
+- Auto-detect JSON/JSONL format / 自动检测JSON/JSONL格式
+- List length counting / 列表长度统计
+- Force format parsing / 强制指定格式解析
+
+#### 参数 / Arguments
+| 选项 | 描述 | 默认值 |
+|------|------|--------|
+| `file_path` | File path to count | (必需) |
+| 文件路径 | 要统计的文件路径 | (必需) |
+| `-j, --json` | Force parse as JSON file | False |
+| `-j, --json` | 强制解析为JSON文件 | 关闭 |
+| `-l, --jsonl` | Force parse as JSONL file | False |
+| `-l, --jsonl` | 强制解析为JSONL文件 | 关闭 |
+
 
 ---
 
@@ -104,6 +123,20 @@ toolbox-iop-duplicate data.json
 
 toolbox-iop-duplicate data.json --key name
 
+```
+
+### Count List Length / 统计列表长度
+```bash
+# Auto-detect format / 自动检测格式
+toolbox-iop-count data.json
+
+toolbox-iop-count data.jsonl
+
+# Force parse as JSON / 强制解析为JSON
+toolbox-iop-count data.json --json
+
+# Force parse as JSONL / 强制解析为JSONL
+toolbox-iop-count data.jsonl --jsonl
 ```
 
 

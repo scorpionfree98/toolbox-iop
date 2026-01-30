@@ -17,6 +17,7 @@ license = { text = "MIT" }
 [project.scripts]
 toolbox-iop-print = "toolbox_iop.cli:print_main"
 toolbox-iop-duplicate = "toolbox_iop.cli:check_main"
+toolbox-iop-count = "toolbox_iop.cli:count_main"
 
 [build-system]
 requires = ["hatchling"]
