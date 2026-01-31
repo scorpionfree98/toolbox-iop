@@ -14,6 +14,11 @@ dependencies = [
 ]
 license = { text = "MIT" }
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+
 [project.scripts]
 toolbox-iop-print = "toolbox_iop.cli:print_main"
 toolbox-iop-duplicate = "toolbox_iop.cli:check_main"
