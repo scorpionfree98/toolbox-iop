@@ -1,6 +1,8 @@
-import json
+import ujson as json
 
 import json_repair
+
+__all__ = ["json"]
 
 
 def safety_json_loader(json_str, index=None, repair=True):
@@ -37,6 +39,7 @@ def save_normal_json(json_info, json_path):
         for info in json_info:
             print(json.dumps(info, ensure_ascii=False), file=f)
 
+
 def save_json_file(json_info, json_path):
     with open(json_path, "w") as f:
         print(json.dumps(json_info, ensure_ascii=False), file=f)
@@ -55,8 +58,8 @@ def load_json_line(info, repair=True):
     e = None
     try:
         data = json.loads(info)
-    except json.JSONDecodeError as e:
-        # 可以在这里添加安装逻辑   
+    except json.JSONDecodeError as e:  # noqa: F841
+        # 可以在这里添加安装逻辑
         pass
     if repair:
         data = json_repair.loads(info)
@@ -70,5 +73,3 @@ def load_json_file(file_path):
     with open(file_path, "r") as file:
         data = load_json_line(file.read())
     return data
-
-
